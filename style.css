@@ -360,6 +360,7 @@ nav {
   border: 0;
   outline: #1876f2;
   padding: 4px 4px;
+  cursor: pointer;
 }
 
 button:active {
