@@ -344,7 +344,7 @@ nav {
 }
 .post-input-container textarea {
   width: 100%;
-  border: 0;
+  border: ;
   outline: 0;
   border-bottom: 1px solid #ccc;
   background: transparent;
@@ -553,4 +553,112 @@ button:active {
 #dark-btn.dark-btn-on {
   padding-left: 23px;
   background: #0a0a0a;
+}
+@media (max-width: 900px) {
+  .logo {
+    width: 100px;
+    margin-right: 45px;
+  }
+  .left-sidebar {
+    display: none;
+  }
+  .right-sidebar {
+    display: none;
+  }
+  .story-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .story {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .story img {
+    position: absolute;
+    width: 25px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #1876f2;
+  }
+
+  .story p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  .story-gallery .story.story1 img {
+    position: absolute;
+    width: 25px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+  }
+  .story-gallery .story.story1 p {
+    font-size: 14px;
+  }
+  .nav-left {
+    display: flex;
+  }
+  .nav-left img {
+    margin-right: 1%;
+  }
+  .nav-left ul {
+    display: flex;
+  }
+  .nav-left ul li img {
+    width: 20px;
+    margin: 0 8px;
+  }
+  .search-box {
+    display: none;
+  }
+  .search-box input {
+    display: none;
+  }
+  .search-box img {
+    margin: 0 0;
+    color: #fff;
+  }
+  .nav-user-icon img {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .write-post-container {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+  .write-post-container .user-profile div {
+    display: none;
+  }
+  .write-post-container .add-post-links {
+    display: none;
+  }
+  .post-input-container button {
+    display: none;
+  }
+  .post-input-container textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+  }
+  .main-content {
+    flex-basis: 100%;
+    width: fit-content;
+    padding-right: 0%;
+  }
 }
